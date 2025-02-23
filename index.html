@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+
+    <div class="container">
+        <section class="form-section">
+            <h2>Add Employee</h2>
+            
+            <form id="employee-form"   autocomplete="off" onsubmit="onFormSubmit(event)">
+                <label for="employee-name">Employee Name:</label>
+                <input type="text" id="name" name="employeeName" placeholder="Employee Name" />
+                
+                <label for="employee-email">Email:</label>
+                <input type="email" id="email" name="employeeEmail" placeholder="Employee Email" />
+                  
+                <label for="employee-department">Department:</label>
+                <input type="text" id="department" name="employeeDepartment" placeholder="Department" />
+                
+                <label for="employee-salary">Salary:</label>
+                <input type="number" id="salary" name="employeeSalary" placeholder="Salary" />
+                
+                <button type="submit">Add Employee</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Employee List</h2>
+            <table id="employee-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-table-body">
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
